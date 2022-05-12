@@ -1,0 +1,1 @@
+server: dev_server:1234 # NB can't be "{{ hostvars[groups['servers'] | first].ansible_host }}" as host won't be in play!

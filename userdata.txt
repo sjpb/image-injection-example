@@ -1,0 +1,4 @@
+## template: jinja
+#cloud-config
+runcmd:
+    - sed -i 's/USERDATA_VALUE_server/{{ ds.meta_data.meta.server }}/' /etc/example.conf
